@@ -1,15 +1,16 @@
-def get_grades():
+def conseguir_notas():
     while True:
         try:
-            grades_input = input("Ingrese una lista de calificaciones separadas por comas: ")
-            grades_list = grades_input.split(',')
-            grades = [int(grade.strip()) for grade in grades_list]
+            notas = input("Ingrese una lista de calificaciones separadas por comas: ")
+            lista_notas = notas.split(',')
+
+            grades = [int(grade.strip()) for grade in lista_notas]
             return grades
         except ValueError:
             print("Error: Asegúrese de ingresar solo números enteros separados por comas.")
 
 def main():
-    grades = get_grades()
+    grades = conseguir_notas()
     print("Lista de calificaciones:", grades)
 
 if __name__ == "__main__":

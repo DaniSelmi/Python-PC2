@@ -12,10 +12,10 @@ class CUADRADO(RECTANGULO):
 
 def main():
     # Crear un objeto de tipo RECTANGULO
-    rectangulo = RECTANGULO(5, 10)
+    rectangulo = RECTANGULO(8, 12)
     
     # Crear un objeto de tipo CUADRADO
-    cuadrado = CUADRADO(4)
+    cuadrado = CUADRADO(7)
     
     # Calcular y mostrar el área del rectángulo
     area_rectangulo = rectangulo.calcular_area()

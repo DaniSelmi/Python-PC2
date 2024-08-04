@@ -27,11 +27,11 @@ def main():
     alumno.display()
     
     # Asignar edad y notas al alumno
-    alumno.setAge(20)
-    alumno.setNota([90, 85, 88])
+    alumno.setAge(18)
+    alumno.setNota([95, 80, 85])
 
     # Mostrar información actualizada del alumno
-    print("\nInformación actualizada del alumno:")
+    print("Información actualizada del alumno:")
     alumno.display()
 
 if __name__ == "__main__":

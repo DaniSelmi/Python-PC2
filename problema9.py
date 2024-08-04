@@ -1,27 +1,6 @@
-import math
+from problema3 import CIRCULO
 
-class CIRCULO:
-    def __init__(self, radio):
-        self.radio = radio
-
-    def calcular_area(self):
-        return math.pi * (self.radio ** 2)
-
-class RECTANGULO:
-    def __init__(self, largo, ancho):
-        self.largo = largo
-        self.ancho = ancho
-
-    def calcular_area(self):
-        return self.largo * self.ancho
-
-class CUADRADO(RECTANGULO):
-    def __init__(self, lado):
-        super().__init__(lado, lado)
-
-#SCRIPT PRINCIPAL CON EL MENU 'menu_geometrico.py'
-
-from geometria import CIRCULO, RECTANGULO, CUADRADO
+from problema4 import RECTANGULO, CUADRADO
 
 def validar_numero(mensaje):
     while True:
@@ -53,7 +32,7 @@ def calcular_area_cuadrado():
     area = cuadrado.calcular_area()
     print(f"El área del cuadrado con lado {lado} es: {area:.2f}")
 
-def mostrar_menu():
+def menu():
     while True:
         print("\n--- Menú de Geometría ---")
         print("1. Calcular el área de un círculo")
@@ -76,4 +55,4 @@ def mostrar_menu():
             print("Opción no válida. Por favor, seleccione una opción del 1 al 4.")
 
 if __name__ == "__main__":
-    mostrar_menu()
+    menu()

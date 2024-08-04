@@ -9,8 +9,8 @@ class CIRCULO:
 
 def main():
     # Crear dos objetos de tipo CIRCULO
-    circulo1 = CIRCULO(5)
-    circulo2 = CIRCULO(10)
+    circulo1 = CIRCULO(20)
+    circulo2 = CIRCULO(5)
     
     # Calcular y mostrar el área de los dos círculos
     area1 = circulo1.calcular_area()

@@ -30,7 +30,7 @@ def main():
     elif porcentage > 99:
         print("F")
     else:
-        print(f"{percentage}%")
+        print(f"{porcentage}%")
 
 if __name__ == "__main__":
     main()
