@@ -1,8 +1,8 @@
-def get_fraction():
+def conseguir_fraccion():
     while True:
         try:
-            fraction = input("Ingrese una fracción en el formato X/Y: ")
-            x, y = fraction.split("/")
+            fraccion = input("Ingrese una fracción en el formato X/Y: ")
+            x, y = fraccion.split("/")
             x = int(x)
             y = int(y)
 
@@ -17,17 +17,17 @@ def get_fraction():
         except ZeroDivisionError:
             print("Error: El denominador no puede ser cero.")
 
-def calculate_percentage(x, y):
-    percentage = (x / y) * 100
-    return round(percentage)
+def calcula_porcentage(x, y):
+    porcentage = (x / y) * 100
+    return round(porcentage)
 
 def main():
-    x, y = get_fraction()
-    percentage = calculate_percentage(x, y)
+    x, y = conseguir_fraccion()
+    porcentage = calcula_porcentage(x, y)
 
-    if percentage < 1:
+    if porcentage < 1:
         print("E")
-    elif percentage > 99:
+    elif porcentage > 99:
         print("F")
     else:
         print(f"{percentage}%")
